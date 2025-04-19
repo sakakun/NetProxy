@@ -139,6 +139,7 @@
       <Content Include="NLInterop.dll">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Content>
+      <Content Include="ReadMe.md" />
       <Content Include="settings.ini">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Content>
