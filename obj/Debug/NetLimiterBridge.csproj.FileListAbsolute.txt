@@ -1,0 +1,13 @@
+C:\Users\Matthew\source\repos\sakakun\NetProxy\obj\Debug\NetLimiterBridge.csproj.AssemblyReference.cache
+C:\Users\Matthew\source\repos\sakakun\NetProxy\obj\Debug\NetLimiterBridge.csproj.CoreCompileInputs.cache
+\\VM-DEV\ServerData\Development\NetProxy\NLInterop.dll
+\\VM-DEV\ServerData\Development\NetProxy\NetLimiterBridge.exe.config
+\\VM-DEV\ServerData\Development\NetProxy\NetLimiterBridge.exe
+\\VM-DEV\ServerData\Development\NetProxy\NetLimiterBridge.pdb
+C:\Users\Matthew\source\repos\sakakun\NetProxy\obj\Debug\NetLimit.3EC73E66.Up2Date
+C:\Users\Matthew\source\repos\sakakun\NetProxy\obj\Debug\NetLimiterBridge.exe
+C:\Users\Matthew\source\repos\sakakun\NetProxy\obj\Debug\NetLimiterBridge.pdb
+\\VM-DEV\ServerData\Development\HawkSync\Debug\net8.0-windows10.0.19041.0\NetLimiterBridge\NLInterop.dll
+\\VM-DEV\ServerData\Development\HawkSync\Debug\net8.0-windows10.0.19041.0\NetLimiterBridge\NetLimiterBridge.exe.config
+\\VM-DEV\ServerData\Development\HawkSync\Debug\net8.0-windows10.0.19041.0\NetLimiterBridge\NetLimiterBridge.exe
+\\VM-DEV\ServerData\Development\HawkSync\Debug\net8.0-windows10.0.19041.0\NetLimiterBridge\NetLimiterBridge.pdb

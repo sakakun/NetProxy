@@ -4,28 +4,26 @@ A tool for monitoring and managing network connections, focusing on identifying 
 
 ## Requirements
 - NetLimiter (Latest Version)
-- .NET Framework 4.5 or higher
+- .NET Framework 4.6.2
 
-## Setup
+## Feature Actions
+- initConnection: Initialize connection to NetLimiter.
+- endProgram: Terminate the program and clean up resources.
+- getAppID: Retrieve the application ID for a specified application. 
+  - Parameters: Application Path
+- getConnections: List all current network connections for a specified application.
+  - Parameters: Application ID
+- getFilterObject: Retrieve filter objects associated with a specified name.
+  - Parameters: Filter Name
+- addIPToFilter: Add an IP address to a specified filter.
+  - Parameters: Filter Name, IP Address
+- removeIPFromFilter: Remove an IP address from a specified filter.
+  - Parameters: Filter Name, IP Address
+- setConnectionLimit: Set the connection limit for a specified application.
+  - Parameters: Connection Limit
+- enableConnectionLimit: Enable or disable monitoring for the number of connection for the specified application.
+  - Parameters: Enable/Disable
+  - A hook in the "getConnections" action to enforce the connection limit and trigger addIPToFilter if the limit is exceeded.
 
-### NetLimiter Configuration
-1. Create a filter in NetLimiter:
-   - **Filter Name**: `VPN Block` // Can be any name, as long as you place it in the Settings.ini the same.
-   - **Filter Type**: `Filter`
-   - **Per-Type**: `Per-Connection`
-   - **Filter Functions**:
-     - Add a new function: `Remote Address in Range`.
-     - Add at least one IP address to initialize the filter.
-   - Save the filter and select it in the Filter List screen.
-   - Under **Filter View -> Rules**:
-     - Set **Blocker In/Out** to `Deny`.
-     - Set **Priority** to `Critical`.
-
-### `settings.ini` Configuration
-1. Update the following fields in `settings.ini`:
-   - **Host Information**: Use `localhost` or `127.0.0.1` if running on the same machine.
-     - If Running on Host, run as admin.
-   - **Proxy Checker**: Set the proxy service and API key.
-   - **Whitelist**: Add any IPs to ignore.
-
-Refer to the example `settings.ini` file for detailed configuration options.
+- Application to use a Named Pipe for communication with other applications.  The program will be started by another application and will listen for commands via the Named Pipe.  The connection to Netlimiter will be maintain until program closes.
+  - Pipe Name: NetLimiterPipe
